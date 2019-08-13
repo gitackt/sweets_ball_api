@@ -15,9 +15,12 @@ docker-compose up -d
 
 http://localhost:3000
 
+## Initial 
+```
+docker-compose run app rake db:create
+docker-compose run app rake db:migrate
+```
 
 ## Structure
 - app   (Ruby on Rails) → Application API Server
-- cache (Redis)         → Database for orders
 - db    (MySQL)         → Database for users and assets
-- job   ()              → Deal bid-ask orders
