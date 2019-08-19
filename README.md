@@ -19,6 +19,7 @@ http://localhost:3000
 ```
 docker-compose run app rake db:create
 docker-compose run app rake db:migrate
+docker-compose run app rake db:seed_fu
 ```
 
 ## Structure

@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.3'
 
 gem 'mysql2'
 gem 'dotenv-rails'
+gem 'seed-fu'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
