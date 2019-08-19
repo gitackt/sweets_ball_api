@@ -1,5 +1,5 @@
 class AssetsController < ApplicationController
-  before_action :set_asset, only: [:show, :update, :destroy]
+  before_action :set_asset, only: [:show]
 
   # GET /assets
   # GET /assets.json
@@ -10,34 +10,6 @@ class AssetsController < ApplicationController
   # GET /assets/1
   # GET /assets/1.json
   def show
-  end
-
-  # POST /assets
-  # POST /assets.json
-  def create
-    @asset = Asset.new(asset_params)
-
-    if @asset.save
-      render :show, status: :created, location: @asset
-    else
-      render json: @asset.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /assets/1
-  # PATCH/PUT /assets/1.json
-  def update
-    if @asset.update(asset_params)
-      render :show, status: :ok, location: @asset
-    else
-      render json: @asset.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /assets/1
-  # DELETE /assets/1.json
-  def destroy
-    @asset.destroy
   end
 
   private

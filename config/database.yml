@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: sweet_trader_development
+  database: sweets_ball_development
 
 test:
   <<: *default
-  database: sweet_trader_test
+  database: sweets_ball_test
 
 production:
   <<: *default
-  database: sweet_trader_production
-  username: sweet_trader
-  password: <%= ENV['sweet_trader_DATABASE_PASSWORD'] %>
+  database: sweets_ball_production
+  username: sweets_ball
+  password: <%= ENV['sweets_ball_DATABASE_PASSWORD'] %>

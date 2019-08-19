@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :charts
+  resources :charts, only: [:index, :show], param: :asset_id
   resources :orders
   resources :logs
   resources :portfolios
